@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <title>Materialize</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <script  src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script src="assets/scripts/app.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                
+                <div class="fixed-action-btn hide-on-large-only">
+                    <a class="btn-floating btn-large red button-collapse" data-activates="mobile-demo">
+                    <i class="large material-icons">list</i>
+                    </a>
+                </div>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+                </div>
+            </nav>
+                    </header>
+                    <div class="center-align">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                    <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        <main>
+                 <div class="row">
+                    <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                    </div>
+                
+                
+                    <div class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <table>
+                    <thead>
+                    <tr>
+                        <th data-field="id">Name</th>
+                        <th data-field="name">Item Name</th>
+                        <th data-field="price">Item Price</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>$0.87</td>
+                    </tr>
+                    <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td>$3.76</td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td>$7.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                </ul>
+                <ul class="collection with-header">
+                    <li class="collection-header"><h4>First Names</h4></li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                </ul>
+                
+                <div class="row contactForm">
+                    <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                        This is an inline input field:
+                        <div class="input-field inline">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            
+        </main>
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+    </body>
+</html>
