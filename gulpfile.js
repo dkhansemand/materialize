@@ -10,12 +10,9 @@ var gulp = require('gulp'),
 	inject = require('gulp-inject'),
 	stripDebug = require('gulp-strip-debug'),
 	uglify = require('gulp-uglify'),
-	autoprefix = require('gulp-autoprefixer'),
-	cleanCSS = require('gulp-clean-css'),
 	sass = require('gulp-sass'),
 	cached = require('gulp-cached'),
 	sassPartialsImported = require('gulp-sass-partials-imported'),
-
 
 // other variables
 	scss_dir = './src/assets/stylesheets/sass/';
@@ -53,27 +50,27 @@ gulp.task('htmlpage', () => {
                         './build/assets/stylesheets/default.css'],
                         {read: false});
 
-	gulp.src(htmlSrc)
-		.pipe(changed(htmlDst))
-        .pipe(inject(scripts, {
-			addRootSlash: false,
-			transform: (filePath, file, i, length) => {
-				var newPath = filePath.replace('build/', '');
-				console.log('injected script: ' + newPath);
-				return '<script src="' + newPath  + '"></script>';
-			}
-        }))
-		.pipe(inject(css, {
-			addRootSlash: false,
-			transform: (filePath, file, i, length) => {
-				var newPath = filePath.replace('build/', '');
-				console.log('injected style: ' + newPath);
-				return '<link rel="stylesheet" href="' + newPath + '">';
-			}
-		}))
-		.pipe(minifyHTML({collapseWhitespace: true}))
-		.pipe(gulp.dest(htmlDst));
-});
+        gulp.src(htmlSrc)
+            .pipe(changed(htmlDst))
+            .pipe(inject(scripts, {
+                addRootSlash: false,
+                transform: (filePath, file, i, length) => {
+                    var newPath = filePath.replace('build/', '');
+                    console.log('injected script: ' + newPath);
+                    return '<script src="' + newPath  + '"></script>';
+                }
+            }))
+            .pipe(inject(css, {
+                addRootSlash: false,
+                transform: (filePath, file, i, length) => {
+                    var newPath = filePath.replace('build/', '');
+                    console.log('injected style: ' + newPath);
+                    return '<link rel="stylesheet" href="' + newPath + '">';
+                }
+            }))
+            .pipe(minifyHTML({collapseWhitespace: true}))
+            .pipe(gulp.dest(htmlDst));
+        });
 
 // JS concat, strip debugging and minify
 gulp.task('scripts', () => {
