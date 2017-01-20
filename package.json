@@ -1,0 +1,22 @@
+{
+  "name": "materialize",
+  "version": "0.0.1",
+  "description": "Material design freamework front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkhansemand/materialize.git"
+  },
+  "keywords": [
+    "materialize"
+  ],
+  "author": "Andreas Hansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkhansemand/materialize/issues"
+  },
+  "homepage": "https://github.com/dkhansemand/materialize#readme"
+}
